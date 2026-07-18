@@ -13,8 +13,7 @@ clean_screen:
     mov cx, 0000h      ; top-left corner
     mov dx, 184Fh      ; bottom-right corner (row 24, col 79)
     int 10h
-
-xor dx,dx
+    
 mov ah,numTocheck
 mov bh, mask
 AND ah,bh
